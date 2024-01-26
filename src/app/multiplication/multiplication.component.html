@@ -1,0 +1,19 @@
+<div class="container center-div shadow p-3 mb-5 rounded bg-warhing bg-opacity-25 fs-5">
+    <div class="row" >
+        <div class="col-2" *ngFor="let item of [].constructor(10); let v = index">
+            <div class="align-center list-unstyled px-4 p-3">
+
+                <h2>Table de : {{v}}</h2>
+                <ul>
+                    <li *ngFor="let item of [].constructor(10); let i = index">
+                        <span class="nmulti">{{v}}</span>
+                        <span>&nbsp; x &nbsp; </ span>
+                            <span>{{i+1}}</span>
+                            <span> = </span>
+                            <span>{{v*(i+1) }}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
